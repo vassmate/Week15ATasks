@@ -21,7 +21,7 @@ namespace Week15ATasks
             InitializeComponent();
         }
 
-        private void btnSave_Click(object sender, System.EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
             if (!Regex.IsMatch(txtName.Text, nameRegexPattern)) MessageBox.Show(notValidNameMsg);
             if (!Regex.IsMatch(txtPhone.Text, phoneRegexPattern)) MessageBox.Show(notValidPhoneMsg);
@@ -33,7 +33,7 @@ namespace Week15ATasks
         private string ReformatPhone(string s)
         {
             Match m = Regex.Match(s, phoneRegexPattern);
-            return String.Format("({0}) {1}-{2}", m.Groups[1], m.Groups[2], m.Groups[3]);
+            return $"({m.Groups[1]}) {m.Groups[2]}-{m.Groups[3]}";
         }
     }
 }

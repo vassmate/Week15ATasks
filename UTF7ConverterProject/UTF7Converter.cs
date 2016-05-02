@@ -20,7 +20,7 @@ namespace UTF7ConverterProject
                 streamWriter.Close();
                 streamReader.Close();
 
-                Console.WriteLine(">File on the following path is converted to UTF7: " + "\n>" + inptFilePath);
+                Console.WriteLine(">File on the following path is converted to UTF7: " + "\n>" + inptFilePath + "\n");
             }
             catch (Exception ex)
             {

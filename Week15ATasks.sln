@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputValidatorProject", "We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTF7ConverterProject", "UTF7ConverterProject\UTF7ConverterProject.csproj", "{57AD75BE-A885-4431-B936-12512A393786}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleThreadingDemo", "SimpleThreadingDemo\SimpleThreadingDemo.csproj", "{DA4340E6-C684-4D5C-BAFA-14A384D85E2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{57AD75BE-A885-4431-B936-12512A393786}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57AD75BE-A885-4431-B936-12512A393786}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57AD75BE-A885-4431-B936-12512A393786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA4340E6-C684-4D5C-BAFA-14A384D85E2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA4340E6-C684-4D5C-BAFA-14A384D85E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA4340E6-C684-4D5C-BAFA-14A384D85E2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA4340E6-C684-4D5C-BAFA-14A384D85E2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
