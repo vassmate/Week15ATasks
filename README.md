@@ -14,3 +14,7 @@ Since this is not a WinForms-oriented course you can perform this validation sim
 - Serialization:
 
 In this exercise, you modify a custom class so that developers can easily store it to the disk for later retrieval or transfer it across a network to another .NET Framework application. Open the C# project in the Lesson1-Serialize-People folder, and examine the contents! You need to modify the Person class to make it serializable.
+
+- Threading:
+
+In this exercise, you create a simple console application and start two threads simultaneously.
