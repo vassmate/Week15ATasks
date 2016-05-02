@@ -1,4 +1,4 @@
-﻿namespace Week15ATasks
+﻿namespace InputValidatorProject
 {
     partial class InputValidator
     {

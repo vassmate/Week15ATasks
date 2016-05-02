@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Week15ATasks.Properties
+namespace InputValidatorProject.Properties
 {
 
 

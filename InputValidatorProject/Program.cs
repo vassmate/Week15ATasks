@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Week15ATasks
+namespace InputValidatorProject
 {
     static class Program
     {
