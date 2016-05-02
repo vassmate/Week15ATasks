@@ -15,6 +15,6 @@ In this exercise, you modify a custom class so that developers can easily store 
 
 - Threading:
 
-1. In this exercise, you create a simple console application and start two threads simultaneously.
-2. Create a simple console application in which you will use a Mutex to ensure there is only one instance of the application running at any point. If you encounter a problem completing an exercise, the completed projects are available on the companion CD in the Code folder.
-3. Create an application that uses the thread pool to queue up methods to call on separate threads. If you encounter a problem completing an exercise, the completed projects are available on the companion CD in the Code folder.
+In this exercise, you create a simple console application and start two threads simultaneously.
+Create a simple console application in which you will use a Mutex to ensure there is only one instance of the application running at any point. If you encounter a problem completing an exercise, the completed projects are available on the companion CD in the Code folder.
+Create an application that uses the thread pool to queue up methods to call on separate threads. If you encounter a problem completing an exercise, the completed projects are available on the companion CD in the Code folder.
