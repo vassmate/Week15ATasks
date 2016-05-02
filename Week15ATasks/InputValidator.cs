@@ -26,6 +26,7 @@ namespace Week15ATasks
             if (!Regex.IsMatch(txtPhone.Text, @"^((\(\d{3}\)?)|(\d{3}-))?\d{3}-\d{4}$"))
             {
                 MessageBox.Show(notValidPhoneMsg);
+                txtPhone.Text = ReformatPhone(txtPhone.Text);
             }
 
             if (!Regex.IsMatch(txtEmail.Text, @"^([a-zA-Z0-9_\-” + @”\.]+)@((\[[0-9]{1,3}" +
@@ -34,7 +35,6 @@ namespace Week15ATasks
             {
                 MessageBox.Show(notValidEmailMsg);
             }
-            txtPhone.Text = ReformatPhone(txtPhone.Text);
         }
 
         static string ReformatPhone(string s)
