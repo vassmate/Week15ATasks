@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTF7ConverterProject", "UTF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleThreadingDemo", "SimpleThreadingDemo\SimpleThreadingDemo.csproj", "{DA4340E6-C684-4D5C-BAFA-14A384D85E2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleInstance", "SingleInstance\SingleInstance.csproj", "{3FF97F9E-6B58-4BBF-9E54-EA38DDD62972}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DA4340E6-C684-4D5C-BAFA-14A384D85E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA4340E6-C684-4D5C-BAFA-14A384D85E2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA4340E6-C684-4D5C-BAFA-14A384D85E2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FF97F9E-6B58-4BBF-9E54-EA38DDD62972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FF97F9E-6B58-4BBF-9E54-EA38DDD62972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FF97F9E-6B58-4BBF-9E54-EA38DDD62972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FF97F9E-6B58-4BBF-9E54-EA38DDD62972}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
