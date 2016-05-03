@@ -1,4 +1,4 @@
-# Week15ATasks
+# Week 15A Tasks
 Repository for the Week 15A tasks.
 
 # Initial description
@@ -13,7 +13,7 @@ Since this is not a WinForms-oriented course you can perform this validation sim
 
 - Serialization:
  
-(Not yet done.)
+(SerializePeople - not yet done)
 
 In this exercise, you modify a custom class so that developers can easily store it to the disk for later retrieval or transfer it across a network to another .NET Framework application. Open the C# project in the Lesson1-Serialize-People folder, and examine the contents! You need to modify the Person class to make it serializable.
 
