@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadPoolDemo", "ThreadPoo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputValidatorProject", "InputValidatorProject\InputValidatorProject.csproj", "{882C665D-2B73-4128-9BCA-7B275320B45B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializePeople", "SerializePeople\SerializePeople.csproj", "{4486BAAB-FCB7-4636-9FDE-FD5F7740CCB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{882C665D-2B73-4128-9BCA-7B275320B45B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{882C665D-2B73-4128-9BCA-7B275320B45B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{882C665D-2B73-4128-9BCA-7B275320B45B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4486BAAB-FCB7-4636-9FDE-FD5F7740CCB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4486BAAB-FCB7-4636-9FDE-FD5F7740CCB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4486BAAB-FCB7-4636-9FDE-FD5F7740CCB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4486BAAB-FCB7-4636-9FDE-FD5F7740CCB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
