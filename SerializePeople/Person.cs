@@ -32,7 +32,7 @@ namespace SerializePeople
         [OnSerializing]
         public void ShowInfo(StreamingContext context)
         {
-            string msg = ">I'm under serialization...";
+            string msg = ">Person is under serialization...\n";
             Console.WriteLine(msg);
         }
     }

@@ -11,7 +11,8 @@ namespace SerializePeople
         static void Main()
         {
             string nameInfo = ">Person's name: ";
-            string exitInfo = ">Press any key to exit...";
+            string ageInfo = ">Person's age: ";
+            string exitInfo = "\n>Press any key to exit...";
 
             Person person = new Person("Mate", 25);
 
@@ -21,6 +22,7 @@ namespace SerializePeople
             SerializePersonsToXml(person);
 
             Console.WriteLine(nameInfo + personFromFile.Name);
+            Console.WriteLine(ageInfo + personFromFile.Age);
             Console.WriteLine(exitInfo);
             Console.Read();
         }
