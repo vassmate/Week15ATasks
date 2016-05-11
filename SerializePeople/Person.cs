@@ -4,10 +4,10 @@ using System.Runtime.Serialization;
 namespace SerializePeople
 {
     [Serializable]
-    public class Person
+    public class Person : IDeserializationCallback
     {
         private string _name;
-        private int _age;
+        [NonSerialized] private int _age;
 
         public Person(){}
 
@@ -33,6 +33,16 @@ namespace SerializePeople
         public void ShowInfo(StreamingContext context)
         {
             string msg = ">Person is under serialization...\n";
+            Console.WriteLine(msg);
+        }
+
+        public void OnDeserialization(object sender)
+        {
+            string isAgeSerialized = Age == 0 ? "Age is not serialized!" : Age.ToString();
+            string msg = ">Person is under deserialization...\n" +
+                         "> Person's name: " + Name + "\n" +
+                         "> Person's age: " + isAgeSerialized + "\n";
+
             Console.WriteLine(msg);
         }
     }

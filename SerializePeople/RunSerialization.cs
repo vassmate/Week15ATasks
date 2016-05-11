@@ -1,53 +1,45 @@
 ﻿using System;
 using System.IO;
 using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Soap;
-using System.Xml.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace SerializePeople
 {
     static class RunSerialization
     {
+        private static readonly string _fileName = "person.dat";
+
         static void Main()
         {
-            string nameInfo = ">Person's name: ";
-            string ageInfo = ">Person's age: ";
-            string exitInfo = "\n>Press any key to exit...";
-
             Person person = new Person("Mate", 25);
 
-            SerialzePersons(person, new SoapFormatter());
-            Person personFromFile = DeserializePersons(new SoapFormatter());
+            Serialze(person, new BinaryFormatter());
+            Person personFromFile = Deserialize(new BinaryFormatter());
 
-            SerializePersonsToXml(person);
-
-            Console.WriteLine(nameInfo + personFromFile.Name);
-            Console.WriteLine(ageInfo + personFromFile.Age);
-            Console.WriteLine(exitInfo);
-            Console.Read();
+            CloseInfoToConsole();
         }
 
-        private static void SerializePersonsToXml(Person person)
+        private static void Serialze(Person person, IFormatter iformatter)
         {
-            XmlSerializer xmlSrlr = new XmlSerializer(typeof(Person));
-            StreamWriter strmWriter = new StreamWriter("file.xml");
-            xmlSrlr.Serialize(strmWriter, person);
-            strmWriter.Close();
+            FileStream fileStream = new FileStream(_fileName, FileMode.Create);
+            iformatter.Serialize(fileStream, person);
+            fileStream.Close();
         }
 
-        private static Person DeserializePersons(IFormatter iformatter)
+        private static Person Deserialize(IFormatter iformatter)
         {
-            FileStream readerStream = new FileStream("file.bin", FileMode.Open);
-            Person personFromFile = (Person)iformatter.Deserialize(readerStream);
-            readerStream.Close();
+            FileStream fileStream = new FileStream(_fileName, FileMode.Open);
+            Person personFromFile = (Person)iformatter.Deserialize(fileStream);
+            fileStream.Close();
+
             return personFromFile;
         }
 
-        private static void SerialzePersons(Person person, IFormatter iformatter)
+        private static void CloseInfoToConsole()
         {
-            FileStream fileStream = new FileStream("file.bin", FileMode.Create);
-            iformatter.Serialize(fileStream, person);
-            fileStream.Close();
+            string exitInfo = ">Press any key to exit...";
+            Console.WriteLine(exitInfo);
+            Console.Read();
         }
     }
 }
